@@ -33,7 +33,7 @@ body {
 
 .container-left{
     display: flex;
-    width: 50%;
+    width: 60%;
     border-radius: 10px;
     gap: 18px;
     flex-direction: column;
@@ -42,14 +42,14 @@ body {
 
 /* Left Container for Text */
 .left-container {
-    padding: 15px;
+    padding: 30px;
     width: 70%;
     background-color: rgba(0, 0, 0, 0.266);
 
 }
 
 .text-container h2 {
-    font-size: 36px; /* Increased font size */
+    font-size: 33px; /* Increased font size */
     margin-bottom: 20px;
 }
 
@@ -105,6 +105,17 @@ body {
     margin-right: 15px;
 }
 
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav-main-title{
+    margin: 15px;
+    font-weight:lighter;
+}
+
 
 .nav-item-active{
     color: lime;
@@ -117,7 +128,7 @@ body {
 .line-active {
     background-color: lime;
     height: 2px;
-    width: 100px;
+    width: 200px;
     margin: 0 auto;
 }
 
@@ -149,7 +160,7 @@ body {
 .line {
     background-color: white;
     height: 2px;
-    width: 100px;
+    width: 200px;
     margin: 0 auto;
 }
 
