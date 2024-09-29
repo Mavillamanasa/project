@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Astro Motion</title>
+    <link rel="stylesheet" href="home.css">
+    <style>
+     body {
+        background-color: #0e1b2a;
+        color: white;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .list {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin: 20px;
+        gap: 20px;
+    }
+
+    .nav-item {
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+        position: relative;
+    }
+
+    .nav-text {
+        margin-bottom: 5px;
+        display: block;
+        color: white;
+    }
+
+    .line {
+        background-color: white;
+        height: 2px;
+        width: 100px;
+        margin: 0 auto;
+    }
+
+    .dot {
+        background-color: white;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        position: absolute;
+        top: 27px;  /* Adjust the dot vertically to be centered on the line */
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .footer {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        padding: 10px 20px;
+    }
+
+    .footer_left {
+        text-align: left;
+        color: white;
+    }
+
+    .footer_right {
+        text-align: right;
+        color: white;
+    }
+
+    /* About Section */
+    #about {
+        margin: 50px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        flex-direction: column;
+    }
+
+    /* Horizontal lines */
+    .about-line {
+        width: 60%; /* Adjust this to control the line length */
+        height: 2px;
+        background-color: white;
+        position: relative;
+        margin-bottom: 20px; /* Space between the line and content */
+    }
+
+    .about-line .dot {
+        position: absolute;
+        z-index: 1;
+        width: 12px;
+        height: 12px;
+        background-color: white;
+        border-radius: 50%;
+    }
+
+    /* Dots on both ends of the line */
+    .about-line .dot-left {
+        left: -10px; /* Shift slightly outside the line */
+        top: -5px;
+    }
+
+    .about-line .dot-right {
+        right: -20px; /* Shift slightly outside the line */
+        top: -5px;
+    }
+
+    .about-content {
+        background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+        padding: 20px;
+        border-radius: 10px;
+        width: 60%;
+        color: white;
+        text-align: center;
+        position: relative;
+    }
+
+    .about-content h2 {
+        color: #fff;
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .about-content p {
+        color: #aaa;
+        font-size: 16px;
+        line-height: 1.6;
+    }
+    .about-content p1{
+        display: flex;
+        margin-bottom: 20px;
+    }
+
+    .about-content p a {
+        color: #00FF00; /* Green links */
+        text-decoration: none;
+    }
+
+    </style>
+</head>
+<body>
+    
+<div class="list">
+    <a href="./home.html" class="nav-item">
+        <span class="nav-text">Home</span>
+        <div class="line"></div>
+        <div class="dot active"></div>
+    </a>
+
+    <a href="./gallery.html" class="nav-item">
+        <span class="nav-text">Gallery</span>
+        <div class="line"></div>
+        <div class="dot"></div>
+    </a>
+
+    <a href="./about.html" class="nav-item">
+        <span class="nav-text">About</span>
+        <div class="line"></div>
+        <div class="dot"></div>
+    </a>
+
+    <a href="./contact.html" class="nav-item">
+        <span class="nav-text">Contact</span>
+        <div class="line"></div>
+        <div class="dot"></div>
+    </a>
+</div>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <!-- Line above the content -->
+        <div class="about-line">
+            <span class="dot dot-left"></span>
+            <span class="dot dot-right"></span>
+        </div>
+        
+        <div class="about-content">
+            <h2>About our company</h2>
+            <div class="p1">
+                <p>
+                    You are <a href="#">allowed</a> to use Astro Motion HTML Template for your websites. You are not allowed to re-distribute this template ZIP file on any Free CSS template collection website. Illegal redistribution is strongly prohibited.
+                </p>
+            </div>
+            <div class="p2">
+                <p>
+                    Praesent auctor rhoncus arcu, vitae blandit est vestibulum sit amet. Integer erat turpis, vestibulum pellentesque aliquam ultricies, finibus nec dui. Donec bibendum enim mi, at tristique leo feugiat at. Thank you for visiting Template Mo.
+                </p>
+            </div>
+        </div>
+
+        <!-- Line below the content -->
+        <div class="about-line">
+            <span class="dot dot-left"></span>
+            <span class="dot dot-right"></span>
+        </div>
+    </section>
+
+    <div class="footer">
+        <p class="footer_left">Copyright 2021 Astro Motion Company Limited. All rights reserved.</p>
+        <p class="footer_right">Designed by TemplateMo</p>
+    </div>
+   
+</body>
+</html>

@@ -1,0 +1,99 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: url('home.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    line-height: 1.6;
+}
+
+
+/* Section Styling */
+.section {
+    padding: 60px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 80vh;
+}
+
+/* Container for text and images */
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    border-radius: 10px;
+    padding: 30px;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+/* Left Container for Text */
+.left-container {
+    width: 45%; /* Slightly adjusted width */
+    background-color: rgba(0, 0, 0, 0.7);
+
+}
+
+.text-container h2 {
+    font-size: 36px; /* Increased font size */
+    margin-bottom: 20px;
+}
+
+.text-container p {
+    margin-bottom: 20px;
+    font-size: 16px; /* Adjusted font size */
+    line-height: 1.6;
+}
+
+/* Right Container for Images */
+.right-container {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.right-container .media img {
+    width: 100%;
+    border-radius: 5px;
+    height: 150px; /* Adjusted height for images */
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow for better visibility */
+}
+
+/* Button Styling */
+.button-container {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.button {
+    padding: 12px 25px;
+    background-color: lime;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Footer Styling */
+
+.footer{
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+}
+.footer_left{
+    text-align:left;
+}
+.footer_right{
+    text-align:right;
+}

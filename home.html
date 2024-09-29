@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astro Motion</title>
+    <link rel="stylesheet" href="home.css">
+    <style>
+     
+
+        body {
+    background-color: #0e1b2a;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 20px;
+    gap:20px;
+}
+
+.nav-item {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    position: relative;
+}
+
+.nav-text {
+    margin-bottom: 5px;
+    display: block;
+    color: white;
+}
+
+.line {
+    background-color: white;
+    height: 2px;
+    width: 100px;
+    margin: 0 auto;
+}
+
+/* .dot {
+    background-color: white;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 5px auto;
+} */
+
+.dot {
+    background-color: white;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    top: 27px;  /* Adjust the dot vertically to be centered on the line */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+    </style>
+</head>
+<body>
+   
+
+
+
+
+<div class="list">
+    
+    <a href="./home.html" class="nav-item">
+        <span class="nav-text">Home</span>
+        <div class="line"></div>
+        <div class="dot active"></div>
+    </a>
+
+    <a href="./gallery.html" class="nav-item">
+        <span class="nav-text">Gallery</span>
+        <div class="line"></div>
+        <div class="dot"></div>
+    </a>
+
+    <a href="./about.html" class="nav-item">
+        <span class="nav-text">About</span>
+        <div class="line"></div>
+        <div class="dot"></div>
+    </a>
+
+    <a href="./contact.html" class="nav-item">
+        <span class="nav-text">Contact</span>
+        <div class="line"></div>
+        <div class="dot"></div>
+    </a>
+</div>
+
+    
+
+    <!-- Home Section -->
+    <section id="home" class="section">
+        <div class="container">
+            <!-- Left Section: Text (h2 and p) -->
+            <div class="left-container">
+                <div class="text-container">
+                    <h2>Welcome to Astro Motion</h2>
+                    <p>This HTML template has a motion video background loop which is provided by Get Free Pictures. This is one-page responsive layout for your websites. Feel free to use this for a commercial purpose.</p>
+                    <p>You are not permitted to redistribute this template on your Free CSS collection websites. Please <a href="#">contact us</a> for more information.</p>
+                </div>
+            </div>
+
+            <!-- Right Section: Images -->
+            <div class="right-container">
+                <div class="media">
+                    <img src="home-1.jpg" alt="Robot Image">
+                </div>
+                <div class="media">
+                    <img src="home2.jpg" alt="Glasses Image">
+                </div>
+            </div>
+        </div>
+
+        <!-- View Gallery Button -->
+        <div class="button-container">
+            <a href="gallery.html" class="button">View Gallery</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p class="footer_left">Copyright 2021 Astro Motion Company Limited. All rights reserved.</p>
+        <p class="footer_right">Designed by TemplateMo</p>
+    </div>
+</body>
+</html>
