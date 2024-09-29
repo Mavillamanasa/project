@@ -8,9 +8,9 @@
     <style>
      
 
-        body {
+body {
     background-color: #0e1b2a;
-    color: white;
+    /* color: white; */
     font-family: Arial, sans-serif;
 }
 
@@ -20,46 +20,6 @@
     align-items: center;
     margin: 20px;
     gap:20px;
-}
-
-.nav-item {
-    text-align: center;
-    text-decoration: none;
-    color: white;
-    font-size: 16px;
-    position: relative;
-}
-
-.nav-text {
-    margin-bottom: 5px;
-    display: block;
-    color: white;
-}
-
-.line {
-    background-color: white;
-    height: 2px;
-    width: 100px;
-    margin: 0 auto;
-}
-
-/* .dot {
-    background-color: white;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    margin: 5px auto;
-} */
-
-.dot {
-    background-color: white;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    position: absolute;
-    top: 27px;  /* Adjust the dot vertically to be centered on the line */
-    left: 50%;
-    transform: translateX(-50%);
 }
 
     </style>
@@ -72,10 +32,10 @@
 
 <div class="list">
     
-    <a href="./home.html" class="nav-item">
+    <a href="./home.html" class="nav-item-active">
         <span class="nav-text">Home</span>
-        <div class="line"></div>
-        <div class="dot active"></div>
+        <div class="line-active"></div>
+        <div class="dot-active"></div>
     </a>
 
     <a href="./gallery.html" class="nav-item">
@@ -101,8 +61,15 @@
 
     <!-- Home Section -->
     <section id="home" class="section">
-        <div class="container">
+        
+        <div class="container-left">
+            <div class="dotted-hr">
+                <span class="dot-line"></span>
+                <hr>
+                <span class="dot-line"></span>
+            </div>        
             <!-- Left Section: Text (h2 and p) -->
+             <div class="container">
             <div class="left-container">
                 <div class="text-container">
                     <h2>Welcome to Astro Motion</h2>
@@ -121,11 +88,19 @@
                 </div>
             </div>
         </div>
-
+        <div class="dotted-hr">
+            <span class="dot-line"></span>
+            <hr>
+            <span class="dot-line"></span>
+        </div>
+    
         <!-- View Gallery Button -->
         <div class="button-container">
             <a href="gallery.html" class="button">View Gallery</a>
         </div>
+        </div>
+
+        
     </section>
 
     <!-- Footer -->

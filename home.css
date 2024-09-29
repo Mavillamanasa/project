@@ -19,25 +19,32 @@ body {
     padding: 60px 0;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
     min-height: 80vh;
+    margin-left: 64px;
+
 }
 
 /* Container for text and images */
 .container {
     display: flex;
-    justify-content: space-between;
-    width: 80%;
+    gap: 18px;
+}
+
+.container-left{
+    display: flex;
+    width: 50%;
     border-radius: 10px;
-    padding: 30px;
-    gap: 30px;
-    align-items: flex-start;
+    gap: 18px;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 /* Left Container for Text */
 .left-container {
-    width: 45%; /* Slightly adjusted width */
-    background-color: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    width: 70%;
+    background-color: rgba(0, 0, 0, 0.266);
 
 }
 
@@ -62,8 +69,6 @@ body {
 
 .right-container .media img {
     width: 100%;
-    border-radius: 5px;
-    height: 150px; /* Adjusted height for images */
     object-fit: cover;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow for better visibility */
 }
@@ -76,10 +81,9 @@ body {
 
 .button {
     padding: 12px 25px;
-    background-color: lime;
+    background-color: rgb(255, 255, 255);
     color: black;
     text-decoration: none;
-    border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
 }
@@ -90,10 +94,92 @@ body {
     width:100%;
     display:flex;
     justify-content: space-between;
+
 }
 .footer_left{
     text-align:left;
+    margin-left: 15px;
 }
 .footer_right{
     text-align:right;
+    margin-right: 15px;
+}
+
+
+.nav-item-active{
+    color: lime;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    position: relative;
+}
+
+.line-active {
+    background-color: lime;
+    height: 2px;
+    width: 100px;
+    margin: 0 auto;
+}
+
+
+.dot-active {
+    background-color: lime;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    top: 27px;  /* Adjust the dot vertically to be centered on the line */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.nav-item {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    position: relative;
+}
+
+.nav-text {
+    margin-bottom: 5px;
+    display: block;
+}
+
+.line {
+    background-color: white;
+    height: 2px;
+    width: 100px;
+    margin: 0 auto;
+}
+
+
+.dot {
+    background-color: white;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    top: 27px;  /* Adjust the dot vertically to be centered on the line */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.dotted-hr {
+    display: flex;
+    align-items: center;
+}
+
+hr {
+    flex-grow: 1;
+    border-top: 2px solid rgb(255, 255, 255);
+}
+
+.dot-line {
+    width: 10px;  /* Dot size */
+    height: 10px; /* Dot size */
+    background-color: rgb(255, 255, 255); /* Dot color */
+    border-radius: 50%; /* Make it round */
+    display: inline-block;
 }
