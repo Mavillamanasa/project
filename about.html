@@ -5,107 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About - Astro Motion</title>
     <link rel="stylesheet" href="home.css">
-    <style>
-    .footer {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        padding: 10px 20px;
-    }
-
-    .footer_left {
-        text-align: left;
-        color: white;
-    }
-
-    .footer_right {
-        text-align: right;
-        color: white;
-    }
-
-    /* About Section */
-    #about {
-        margin: 50px 100px;
-        display: flex;
-        justify-content: center;
-        align-items: end;
-        position: relative;
-        flex-direction: column;
-    }
-
-    /* Horizontal lines */
-    .about-line {
-        width: 60%; /* Adjust this to control the line length */
-        height: 2px;
-        background-color: white;
-        position: relative;
-        margin-bottom: 20px; /* Space between the line and content */
-    }
-
-    .about-line .dot {
-        position: absolute;
-        z-index: 1;
-        width: 12px;
-        height: 12px;
-        background-color: white;
-        border-radius: 50%;
-    }
-
-    /* Dots on both ends of the line */
-    .about-line .dot-left {
-        left: -10px; /* Shift slightly outside the line */
-        top: -5px;
-    }
-
-    .about-line .dot-right {
-        right: -20px; /* Shift slightly outside the line */
-        top: -5px;
-    }
-
-    .about-content {
-        background-color: rgba(0, 0, 0, 0.517); /* Semi-transparent black background */
-        padding: 33px;
-        margin: 15px;
-        color: white;
-        position: relative;
-    }
-
-    .about-content h2 {
-        color: #fff;
-        font-size: 24px;
-        margin-bottom: 20px;
-    }
-
-    .about-content p {
-        color: #aaa;
-        font-size: 16px;
-        line-height: 1.6;
-    }
-    .about-content p1{
-        display: flex;
-        margin-bottom: 20px;
-    }
-
-    .about-content p a {
-        color: #00FF00; /* Green links */
-        text-decoration: none;
-    }
-
-    </style>
 </head>
 <body>
-    
     <div class="navbar">
         <h1 class="nav-main-title">Astro Motion</h1>
     <div class="list">
         
-        <a href="./home.html" class="nav-item-active">
+        <a href="./home.html" class="nav-item">
             <span class="nav-text">Home</span>
-            <div class="line-active"></div>
-            <div class="dot-active"></div>
+            <div class="line"></div>
+            <div class="dot"></div>
         </a>
     
         <a href="./gallery.html" class="nav-item">
@@ -114,10 +23,10 @@
             <div class="dot"></div>
         </a>
     
-        <a href="./about.html" class="nav-item">
+        <a href="./about.html" class="nav-item-active">
             <span class="nav-text">About</span>
-            <div class="line"></div>
-            <div class="dot"></div>
+            <div class="line-active"></div>
+            <div class="dot-active"></div>
         </a>
     
         <a href="./contact.html" class="nav-item">
@@ -142,7 +51,7 @@
         
         <div class="about-content">
             <h2>About our company</h2>
-            <br>
+            <br>    
             <div class="p1">
                 <p>
                     You are <a href="#">allowed</a> to use Astro Motion HTML Template for your websites. You are not allowed to re-distribute this template ZIP file on any Free CSS template collection website. Illegal redistribution is strongly prohibited.

@@ -6,61 +6,7 @@
     <title>Gallery - Astro Motion</title>
     <link rel="stylesheet" href="home.css">
     <style>
-    body {
-    background-color: #0e1b2a;
-    color: white;
-    font-family: Arial, sans-serif;
-}
-
-.list {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin: 20px;
-    gap:20px;
-}
-
-.nav-item {
-    text-align: center;
-    text-decoration: none;
-    color: white;
-    font-size: 16px;
-    position: relative;
-}
-
-.nav-text {
-    margin-bottom: 5px;
-    display: block;
-    color: white;
-}
-
-.line {
-    background-color: white;
-    height: 2px;
-    width: 100px;
-    margin: 0 auto;
-}
-
-/* .dot {
-    background-color: white;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    margin: 5px auto;
-} */
-
-.dot {
-    background-color: white;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    position: absolute;
-    top: 27px;  /* Adjust the dot vertically to be centered on the line */
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-        /* Gallery slider */
+/* Gallery slider */
         .gallery-section {
     text-align: center;
     padding: 180px 0 80px 0; /* Increased top padding to move content further down */
@@ -91,49 +37,40 @@
 }
 
 
-/* Footer styles */
-.footer{
-    width:100%;
-    display:flex;
-    justify-content: space-between;
-}
-.footer_left{
-    text-align:left;
-}
-.footer_right{
-    text-align:right;
-}
     </style>
 </head>
 <body>
     <!-- Header -->
+    <div class="navbar">
+        <h1 class="nav-main-title">Astro Motion</h1>
+    <div class="list">
+        
+        <a href="./home.html" class="nav-item">
+            <span class="nav-text">Home</span>
+            <div class="line"></div>
+            <div class="dot"></div>
+        </a>
     
-<div class="list">
-    <a href="./home.html" class="nav-item">
-        <span class="nav-text">Home</span>
-        <div class="line"></div>
-        <div class="dot active"></div>
-    </a>
-
-    <a href="./gallery.html" class="nav-item">
-        <span class="nav-text">Gallery</span>
-        <div class="line"></div>
-        <div class="dot"></div>
-    </a>
-
-    <a href="./about.html" class="nav-item">
-        <span class="nav-text">About</span>
-        <div class="line"></div>
-        <div class="dot"></div>
-    </a>
-
-    <a href="./contact.html" class="nav-item">
-        <span class="nav-text">Contact</span>
-        <div class="line"></div>
-        <div class="dot"></div>
-    </a>
-</div>
-
+        <a href="./gallery.html" class="nav-item-active">
+            <span class="nav-text">Gallery</span>
+            <div class="line-active"></div>
+            <div class="dot-active"></div>
+        </a>
+    
+        <a href="./about.html" class="nav-item">
+            <span class="nav-text">About</span>
+            <div class="line"></div>
+            <div class="dot"></div>
+        </a>
+    
+        <a href="./contact.html" class="nav-item">
+            <span class="nav-text">Contact</span>
+            <div class="line"></div>
+            <div class="dot"></div>
+        </a>
+    </div>
+    </div>
+        
     <!-- Gallery Section -->
     <section class="gallery-section">
         <div class="gallery-images">
